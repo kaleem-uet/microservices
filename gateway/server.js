@@ -1,12 +1,7 @@
 const express = require('express');
-require("dotenv").config({
-  path:
-    process.env.NODE_ENV === "production"
-      ? ".env.production"
-      : ".env.development",
-});
+
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
